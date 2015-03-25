@@ -2,11 +2,10 @@
 
 DuoTone light is a syntax theme for Atom.
 
-It only uses 2 hues, copper & blue. It tries to:
+It only uses 2 hues, copper & blue and tries to:
 
 1. Highlight only the __important__ parts
 2. __Tone down__ less important parts. Like punctuation, brackets etc.
-3. Use copper as __main__ color, blue for __values__.
 
 This hopefully leads to a more calm color scheme, but still lets you find the stuff you're looking for.
 
