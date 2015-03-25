@@ -1,0 +1,11 @@
+{
+  "name": "duotone-light-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "A light syntax theme",
+  "repository": "https://github.com/simurai/duotone-light-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
