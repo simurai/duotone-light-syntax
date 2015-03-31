@@ -3,6 +3,13 @@
   "theme": "syntax",
   "version": "0.1.0",
   "description": "A light syntax theme",
+  "keywords": [
+    "light",
+    "copper",
+    "blue",
+    "duotone",
+    "syntax"
+  ],
   "repository": "https://github.com/simurai/duotone-light-syntax",
   "license": "MIT",
   "engines": {
