@@ -1,26 +1,35 @@
 # DuoTone light
 
-DuoTone light is a syntax theme for Atom.
+A double-hue syntax theme for Atom.
 
-It only uses 2 hues, copper & blue and tries to:
+![DuoTone light](https://cloud.githubusercontent.com/assets/378023/7219573/744b074e-e6e1-11e4-9112-623c60f08c79.png)
 
-1. Highlight only the __important__ parts
-2. __Tone down__ less important parts. Like punctuation, brackets etc.
+DuoTone light uses only 2 hues (copper & blue) and 7 shades in total. It __tones down__ less important parts (like punctuation and brackets) and highlights only the __important__ ones. This leads to a more calm color scheme, but still lets you find the stuff you're looking for.
 
-This hopefully leads to a more calm color scheme, but still lets you find the stuff you're looking for.
+![CSS in DuoTone light](https://cloud.githubusercontent.com/assets/378023/7219568/5caa00cc-e6e1-11e4-894c-1722a0f742df.png)
 
-__Note__: For the above reasons it might not work well with all languages.
+![HTML in DuoTone light](https://cloud.githubusercontent.com/assets/378023/7219570/5cb14b2a-e6e1-11e4-9056-0280c9412e88.png)
 
-![DuoTone-light](https://cloud.githubusercontent.com/assets/378023/6816705/0ce32dae-d2da-11e4-94c9-2c8d9afa7859.png)
+### Currently tested and optimized for these languages:
 
-> The font in the screenshot is `Fira Mono`. You can download it from https://github.com/mozilla/Fira
-
-### Currently optimized for these languages:
-
-- CoffeeScript
+- C
 - CSS
+- CoffeeScript
 - GF Markdown
+- Go
 - HTML
+- JSON
+- (La-)TeX
 - Less
+- Perl
+- PHP
+- Python
+- Ruby
+- SASS
+- SCSS
+- XML
+- YAML
 
-More to come..
+More optimization to come..
+
+> ps. The font in the screenshot is `Fira Mono`. You can download it from https://github.com/mozilla/Fira
