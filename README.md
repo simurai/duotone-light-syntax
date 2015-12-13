@@ -13,13 +13,17 @@ DuoTone light uses only 2 hues (copper & blue) and 7 shades in total. It __tones
 ### Currently tested and optimized for these languages:
 
 - C
-- CSS
+- Clojure
 - CoffeeScript
+- C#
+- CSS
 - GF Markdown
 - Go
+- Haskell
 - HTML
+- Java
+- JavaScript
 - JSON
-- (La-)TeX
 - Less
 - Perl
 - PHP
@@ -27,6 +31,8 @@ DuoTone light uses only 2 hues (copper & blue) and 7 shades in total. It __tones
 - Ruby
 - SASS
 - SCSS
+- Stylus
+- (La-)TeX
 - XML
 - YAML
 
