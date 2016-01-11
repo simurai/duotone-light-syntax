@@ -21,7 +21,10 @@
 
 
 // Base colors -----------------------------------
-@syntax-fg:     @uno-2;
-@syntax-bg:     hsl(@syntax-uno, 33%, 97%);
-@syntax-guide:  darken(@syntax-bg, 10%);
-@syntax-accent: hsl(@syntax-duo, 80%, 60%);
+@syntax-fg:               @uno-2;
+@syntax-bg:               hsl(@syntax-uno, 33%, 97%);
+@syntax-accent:           hsl(@syntax-duo, 80%, 60%);
+@syntax-guide:            darken(@syntax-bg, 10%);
+@syntax-selection:        darken(@syntax-bg, 12%);
+@syntax-selection-gutter: darken(@syntax-bg, 3%);
+@syntax-cursor-line:      fade(@syntax-selection, 26%); // needs to be semi-transparent to show serach results
