@@ -11,18 +11,15 @@ module.exports =
     atom.config.observe 'duotone-light-syntax.preset', (newValue) ->
       root.classList.remove('theme-duotone-light-syntax--custom-colors')
       switch newValue
-        when "Light Winter"
-          uno = 'hsl(186, 91%, 42%)'
-          duo = 'hsl(236, 72%, 53%)'
-        when "Light Spring"
-          uno = 'hsl(93, 57%, 55%)'
-          duo = 'hsl(314, 100%, 43%)'
-        when "Light Summer"
-          uno = 'hsl(202, 45%, 45%)'
-          duo = 'hsl(33, 100%, 45%)'
-        when "Light Fall"
-          uno = 'hsl(50, 59%, 48%)'
-          duo = 'hsl(24, 96%, 54%)'
+        when "Light I"
+          uno = 'hsl(36, 26%, 55%)'
+          duo = 'hsl(241, 53%, 56%)'
+        when "Light II"
+          uno = 'hsl(210, 67%, 56%)'
+          duo = 'hsl(163, 49%, 36%)'
+        when "Light III"
+          uno = 'hsl(183, 100%, 34%)'
+          duo = 'hsl(345, 86%, 61%)'
         when "Custom"
           root.classList.add('theme-duotone-light-syntax--custom-colors')
           uno = atom.config.get('duotone-light-syntax.unoColor').toHexString()
@@ -48,13 +45,13 @@ setColors = ->
   unsetColors() # prevents adding endless properties
 
   # Color limits
-  _high = chroma.mix(uno, 'hsl(0,0%,0%)', 0.5); # mix with black
+  _high = chroma.mix(uno, 'hsl(0,0%,0%)', 0.75); # mix with black
   _mid  = uno
-  _low  = chroma.mix(uno, 'hsl(0,0%,78%)', 0.8); # mix with light grey
+  _low  = chroma.mix(uno, 'hsl(0,0%,88%)', 0.75); # mix with light grey
 
   # Color scales
   _scaleUno = chroma.scale([ _high, _mid, _low]).colors(5)
-  _scaleDuo = chroma.scale([ duo, _low]).padding([0, 0.33]).colors(3)
+  _scaleDuo = chroma.scale([ duo, _low]).padding([0, 0.25]).colors(3)
 
   root.style.setProperty('--uno-1', _scaleUno[0])
   root.style.setProperty('--uno-2', _scaleUno[1])

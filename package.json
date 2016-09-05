@@ -28,22 +28,22 @@
       "type": [
         "string"
       ],
-      "enum": ["Light Winter", "Light Spring", "Light Summer", "Light Fall", "Custom"],
-      "default": "Light Winter"
+      "enum": ["Light I", "Light II", "Light III", "Custom"],
+      "default": "Light I"
     },
     "unoColor": {
       "title": "Uno",
       "description": "Customize the main color",
       "order": 2,
       "type": "color",
-      "default": "#009193"
+      "default": "#919191"
     },
     "duoColor": {
       "title": "Duo",
       "description": "Customize the accent color",
       "order": 3,
       "type": "color",
-      "default": "#FF9500"
+      "default": "#FA6365"
     }
   }
 }
