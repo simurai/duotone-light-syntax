@@ -48,9 +48,9 @@ setColors = ->
   unsetColors() # prevents adding endless properties
 
   # Color limits
-  _high = chroma.mix('hsl(0,0%,0%)', uno, 0.5);
+  _high = chroma.mix(uno, 'hsl(0,0%,0%)', 0.5); # mix with black
   _mid  = uno
-  _low  = chroma.mix('hsl(0,0%,88%)', uno, 0.2);
+  _low  = chroma.mix(uno, 'hsl(0,0%,78%)', 0.8); # mix with light grey
 
   # Color scales
   _scaleUno = chroma.scale([ _high, _mid, _low]).colors(5)
