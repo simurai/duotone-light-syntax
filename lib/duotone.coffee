@@ -6,38 +6,21 @@ duo = ''
 
 module.exports =
   activate: (state) ->
-
-    # Change Preset
-    atom.config.observe 'duotone-light-syntax.preset', (newValue) ->
-      root.classList.remove('theme-duotone-light-syntax--custom-colors')
-      switch newValue
-        when "Light I"
-          uno = 'hsl(35, 37%, 50%)'
-          duo = 'hsl(240, 49%, 68%)'
-        when "Light II"
-          uno = 'hsl(210, 32%, 56%)'
-          duo = 'hsl(150, 62%, 53%)'
-        when "Light III"
-          uno = 'hsl(183, 31%, 50%)'
-          duo = 'hsl( 26, 68%, 60%)'
-        when "Custom"
-          root.classList.add('theme-duotone-light-syntax--custom-colors')
-          uno = atom.config.get('duotone-light-syntax.unoColor').toHexString()
-          duo = atom.config.get('duotone-light-syntax.duoColor').toHexString()
-      setColors()
+    uno = atom.config.get('duotone-light-syntax.color.uno').toHexString()
+    duo = atom.config.get('duotone-light-syntax.color.duo').toHexString()
+    setColors()
 
     # Change Uno
-    atom.config.onDidChange 'duotone-light-syntax.unoColor', ({newValue, oldValue}) ->
+    atom.config.onDidChange 'duotone-light-syntax.color.uno', ({newValue, oldValue}) ->
       uno = newValue.toHexString()
       setColors()
 
     # Change Duo
-    atom.config.onDidChange 'duotone-light-syntax.duoColor', ({newValue, oldValue}) ->
+    atom.config.onDidChange 'duotone-light-syntax.color.duo', ({newValue, oldValue}) ->
       duo = newValue.toHexString()
       setColors()
 
   deactivate: ->
-    root.classList.remove('theme-duotone-light-syntax--custom-colors')
     unsetColors()
 
 # Apply Colors -----------------------
