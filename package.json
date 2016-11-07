@@ -30,14 +30,14 @@
           "description": "Customize the main color",
           "order": 1,
           "type": "color",
-          "default": "#919191"
+          "default": "#A77E55"
         },
         "duo": {
           "title": "Duo",
           "description": "Customize the accent color",
           "order": 2,
           "type": "color",
-          "default": "#FA6365"
+          "default": "#6C3AEB"
         }
       }
     }

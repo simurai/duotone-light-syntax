@@ -28,13 +28,13 @@ setColors = ->
   unsetColors() # prevents adding endless properties
 
   # Color mixing
-  _unoHigh = chroma.mix( uno, 'hsl(30, 0%, 0%)', 0.8);   # mix with black
+  _unoHigh = chroma.mix( uno, 'hsl(30, 0%, 0%)', 0.3);   # mix with black
   _unoMid  = uno                                         # set by user
   _unoLow  = chroma.mix( uno, 'hsl(30, 16%, 98%)', 0.6); # mix with background (@syntax-bg)
 
-  _duoHigh = chroma.mix( uno, 'hsl(30, 0%, 0%)', 0.6);   # mix with black
+  _duoHigh = chroma.mix( duo, 'hsl(30, 0%, 0%)', 0.5);   # mix with black
   _duoMid  = duo                                         # set by user
-  _duoLow  = chroma.mix( duo, 'hsl(30, 16%, 98%)', 0.8); # mix with background (@syntax-bg)
+  _duoLow  = chroma.mix( duo, 'hsl(30, 16%, 98%)', 0.6); # mix with background (@syntax-bg)
 
   # Color scales
   _scaleUno = chroma.scale([_unoHigh, _unoMid, _unoLow]).colors(5)
@@ -50,7 +50,7 @@ setColors = ->
   root.style.setProperty('--duo-2', _scaleDuo[2]) # <- set by user
   root.style.setProperty('--duo-3', _scaleDuo[3])
 
-  root.style.setProperty('--accent', duo)
+  root.style.setProperty('--accent', _scaleDuo[1])
 
 
 # Unset Colors -----------------------
